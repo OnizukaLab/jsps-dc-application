@@ -1,0 +1,16 @@
+{
+  "name": "onizuka-lab",
+  "owner": {
+    "name": "Onizuka Lab, Osaka University"
+  },
+  "metadata": {
+    "description": "Claude Code skills/plugins from Onizuka Lab, Osaka University"
+  },
+  "plugins": [
+    {
+      "name": "jsps-dc-application",
+      "source": "./",
+      "description": "Draft JSPS 特別研究員-DC (DC1/DC2) application content files (申請内容ファイル). Bilingual JA/EN, compile-ready LaTeX (KakenhiLaTeX)."
+    }
+  ]
+}
