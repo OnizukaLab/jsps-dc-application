@@ -1,0 +1,34 @@
+{
+  "skill_name": "jsps-dc-application",
+  "notes": "任务用例验证起草质量;触发用例验证 description 命中率(含与 grant-proposal 的边界)。私有范本不入仓,试跑时由用户本地提供。",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "帮我写 DC2 的申請内容ファイル,研究方向是自己進化型エージェントの安全性(价值漂移的内部表征检测与控制),日语,产出 LaTeX。我的业绩我会提供。",
+      "expected_output": "按 DC 様式 4 节(【２】(1)位置づけ/【２】(2)目的・内容①-⑤/【３】人権/【４】自己分析①②)生成 である調 日语 LaTeX,套科研費LaTeX 模板;Step 1/2/5 有 checkpoint;默认用 figure-spec 出 Fig1/Fig2(灰度安全·日文标签);页数遵守 1/2/1/2;业绩处留 [要確認] 待用户填;不引入研究分担者概念。",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Draft a DC1 JSPS research fellowship proposal on robust and interpretable NLP models, in English, LaTeX output.",
+      "expected_output": "识别为 DC1 + 英文;全英文学术体(applicant 第一人称),DC1 侧重构想独创性与潜力;同一套 4 节様式与页限;科研費LaTeX 模板正文改英文;figure-spec 概念图标签英文且灰度可辨。",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "我已经有研究目的的草稿了,帮我把【４】研究遂行力の自己分析按采用级模式重写一下,DC2,日语。",
+      "expected_output": "只重写节4:业绩分块(査読有/査読中/国際会議現地発表○/受賞/招待講演)+ 筆頭著者太字下线·标 IF/CORE + 带框小标题散文回指 [N];(2)写今後必要要素承载将来性;不超 2 页;不编造业绩。",
+      "files": []
+    }
+  ],
+  "trigger_evals": [
+    {"query": "帮我写学振 DC2 的申请内容文件,我是博三", "should_trigger": true},
+    {"query": "特別研究員に申請したいんだけど、研究遂行力の自己分析ってどう書けばいい?", "should_trigger": true},
+    {"query": "I'm applying for a JSPS DC1 fellowship, can you help me write the research plan?", "should_trigger": true},
+    {"query": "着想に至った経緯のところ、うまく書けないので手伝って(学振DC)", "should_trigger": true},
+    {"query": "帮我写一份科研费基盤B的研究計画調書", "should_trigger": false},
+    {"query": "write me an NSF CAREER proposal on federated learning", "should_trigger": false},
+    {"query": "特別研究員PDの申請書を書きたい", "should_trigger": false},
+    {"query": "帮我把这篇论文投稿 ICML 写 rebuttal", "should_trigger": false}
+  ]
+}

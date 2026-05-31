@@ -1,0 +1,11 @@
+{
+  "name": "jsps-dc-application",
+  "description": "Draft, refine, and translate JSPS Research Fellowship for Young Scientists DC (DC1/DC2) application content files (申請内容ファイル): research plan and self-analysis of research ability. Bilingual JA/EN, outputs compile-ready LaTeX (KakenhiLaTeX template).",
+  "version": "1.0.0",
+  "author": {
+    "name": "Onizuka Lab, Osaka University"
+  },
+  "homepage": "https://github.com/OnizukaLab/jsps-dc-application",
+  "repository": "https://github.com/OnizukaLab/jsps-dc-application",
+  "license": "MIT"
+}
